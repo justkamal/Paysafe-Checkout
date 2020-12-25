@@ -25,6 +25,11 @@ public class Controller {
 
 	@Autowired
 	private CheckoutService checkoutService;
+	
+	@RequestMapping( "/" )
+    public String getCheckoutForm(){
+        return "PaymentCheckout";
+    }
 
 	@PostMapping("/getToken")
 	public ResponseDTO getSingleUseCustomerToken(@RequestBody String payload) {
