@@ -30,7 +30,7 @@
 			//amount
 			let amount = document.getElementById("inputAmount").value;
 			$.ajax({
-					url: "http://localhost:8080/getToken",
+					url: "https://paysafe-cardpay.herokuapp.com/getToken",
 					type: "POST",
 					contentType: "application/json",
 					data: JSON.stringify({
@@ -110,7 +110,7 @@
 							//console.log(result);
 							$.ajax({
 									type: "POST",
-									url: "http://localhost:8080/requestPayment",
+									url: "https://paysafe-cardpay.herokuapp.com/requestPayment",
 									contentType: "application/json",
 									data: JSON.stringify({
 											'token': result.paymentHandleToken,
