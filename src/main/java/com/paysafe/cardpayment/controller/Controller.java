@@ -25,15 +25,9 @@ public class Controller {
 
 	@Autowired
 	private CheckoutService checkoutService;
-	
-	@RequestMapping( "/" )
-    public String getCheckoutForm(){
-        return "PaymentCheckout";
-    }
 
 	@PostMapping("/getToken")
 	public ResponseDTO getSingleUseCustomerToken(@RequestBody String payload) {
-		//Random randFunc = new Random();
 		JSONObject reqPayload = new JSONObject(payload);
 		
 		CreateCustomerRequestDTO createCustomerRequestDTO = new CreateCustomerRequestDTO();
