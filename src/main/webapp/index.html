@@ -86,7 +86,7 @@
 			// console.log(amount)
 			// console.log(uuid)
 			console.log(token);
-			paysafe.checkout.setup("cHVibGljLTc3NTE6Qi1xYTItMC01ZjAzMWNiZS0wLTMwMmQwMjE1MDA4OTBlZjI2MjI5NjU2M2FjY2QxY2I0YWFiNzkwMzIzZDJmZDU3MGQzMDIxNDUxMGJjZGFjZGFhNGYwM2Y1OTQ3N2VlZjEzZjJhZjVhZDEzZTMwNDQ=", {
+			paysafe.checkout.setup(<Enter API Public Key>, {
 					"currency": "USD",
 					"amount": parseInt(amount) * 100,
 					"singleUseCustomerToken": token,
